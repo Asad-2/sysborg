@@ -8,17 +8,45 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
+<style>
+    body{
+        background-color: darkgray;
+    }
+    header{
+        background-color: white;
+        width:cover;
+        height: 20%;
+    }
+    .container {
+        background-color: #800000;
+        width:cover;
+        height:auto;
+        color:white;
+    }
+    footer{
+        background-color: white;
+    }
+
+</style>
 
 <body>
+    <header>
     <h1>sysborg</h1>
+    </header>
 
+    <div class="container">
     <form onsubmit="postTodo(); return false">
-        todo: <input id="todo" type="text" required>
+        Todo: <input id="todo" type="text" required>
         <button type="submit">Add</button>
     </form>
     <button onclick="getAllTodos()">Refresh</button>
 
     <h3 id="result"> </h3>
+    </div>
+
+    <footer>
+        <h3>Thanks for visiting</h3>
+    </footer>
 
     <script>
         function postTodo() {
