@@ -52,7 +52,7 @@
         function postTodo() {
             let todoText = document.querySelector("#todo").value
 
-            axios.post(`http://vast-pink-gazelle-tam.cyclic.app`, {
+            axios.post(`https://vast-pink-gazelle-tam.cyclic.app`, {
                 text: todoText
             })
                 .then(function (response) {
@@ -73,7 +73,7 @@
         }
 
         function getAllTodos() {
-            axios.get(`http://vast-pink-gazelle-tam.cyclic.app`)
+            axios.get(`https://vast-pink-gazelle-tam.cyclic.app`)
                 .then(function (response) {
                     console.log(response.data);
 
